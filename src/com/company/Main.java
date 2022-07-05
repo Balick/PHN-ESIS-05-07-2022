@@ -49,7 +49,7 @@ public class Main {
     public static void Connexion() {
         try {
             //Pour ceux qui n'utilise pas mysql, le paramètre serverTimeZone n'est pas nécessaire
-            //A la place de "jdbc:mysql://localhost:3306/java", remplacer par le nom de votre url de base de
+            //A la place de "jdbc:mysql://localhost:3306/java", remplacer par l'url de votre base de données
             connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/java?serverTimezone=UTC", "root", "");
         } catch (SQLException e) {
             System.out.println(e.getMessage());
